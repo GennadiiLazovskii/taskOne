@@ -18,28 +18,36 @@
       border: 2px solid;
       margin: 24px;
 
-      ul {
-        padding: 0;
+      .cardImg {
+        display: grid;
+        justify-content: end;
+        margin: 10px;
+
+        img {
+          width: 123px;
+          height: 100px;
+        }
       }
 
-      li {
-        margin: 5px 0;
+      .cardTitle {
+        margin: 10px;
+        display: grid;
+        justify-content: start;
       }
-    }
 
-    .cardImg {
-      display: grid;
-      justify-content: end;
-      margin: 10px;
+      .cardList {
+        margin: 30px;
+        display: grid;
+        justify-content: start;
 
-      img {
-        width: 123px;
-        height: 100px;
+        ul {
+          padding: 0;
+        }
+
+        li {
+          margin: 5px 0;
+        }
       }
-    }
-
-    .cardList {
-      display: grid;
     }
 
     .cardLink {

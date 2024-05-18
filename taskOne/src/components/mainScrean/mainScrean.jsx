@@ -9,6 +9,9 @@ const MainScrean = ({ cardData }) => {
             <div className={styles.cardImg}>
               <img src={cardData.img} alt="Card" />
             </div>
+            <div className={styles.cardTitle}>
+              <h1>{cardData.title}</h1>
+            </div>
             <div className={styles.cardList}>
               <ul>
                 {cardData.listItems.map((item, index) => (
