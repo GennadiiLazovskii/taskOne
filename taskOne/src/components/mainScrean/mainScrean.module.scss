@@ -1,0 +1,57 @@
+.mainScrean {
+  padding: 30px;
+
+  .mainScreanCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+      border: 2px solid;
+      margin: 24px;
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        margin: 5px 0;
+      }
+    }
+
+    .cardImg {
+      display: grid;
+      justify-content: end;
+      margin: 10px;
+
+      img {
+        width: 123px;
+        height: 100px;
+      }
+    }
+
+    .cardList {
+      display: grid;
+    }
+
+    .cardLink {
+      display: grid;
+      justify-content: end;
+      margin: 20px;
+
+      a {
+        display: inline-block;
+        margin-top: 10px;
+        color: black;
+      }
+    }
+  }
+}
